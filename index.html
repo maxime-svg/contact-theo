@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Clean & Seat - Contact Théo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --fg:#fff;
+      --brand:#80DEE4;
+    }
+    body{
+      margin:0;
+      background:transparent;
+      color:var(--fg);
+      font-family: Arial, sans-serif;
+    }
+    .container{
+      display:flex;
+      justify-content:center;
+      padding:18px;
+    }
+    .person{
+      position:relative;
+      width:260px;
+      min-height:160px;
+      border:2px solid var(--brand);
+      border-radius:18px;
+      background:rgba(255,255,255,0.03);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:18px 20px;
+      box-shadow:
+        0 0 8px rgba(128,222,228,0.9),
+        0 0 18px rgba(128,222,228,0.6),
+        0 0 32px rgba(128,222,228,0.35),
+        inset 0 0 14px rgba(128,222,228,0.18);
+    }
+    .person::after{
+      content:"";
+      position:absolute;
+      inset:-8px;
+      border-radius:22px;
+      pointer-events:none;
+      filter:blur(8px);
+      background:radial-gradient(120px 80px at 10% 10%, rgba(128,222,228,0.25), transparent 70%),
+                 radial-gradient(120px 80px at 90% 90%, rgba(128,222,228,0.22), transparent 70%);
+    }
+    .name{
+      color:var(--brand);
+      font-weight:800;
+      font-size:20px;
+      letter-spacing:.3px;
+      margin:0 0 10px 0;
+    }
+    p{margin:6px 0}
+    a{color:var(--fg); text-decoration:none}
+    a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="person">
+      <p class="name">Théo</p>
+      <p>📱 <a href="tel:+33756950355">07 56 95 03 55</a></p>
+      <p>✉️ <a href="mailto:contact@clean-and-seat.com">contact@clean-and-seat.com</a></p>
+      <p>📷 <a href="https://www.instagram.com/clean_and_seat" target="_blank">@clean_and_seat</a></p>
+    </div>
+  </div>
+</body>
+</html>
